@@ -43,6 +43,14 @@ public class NewBehaviourScript : MonoBehaviour {
         }
         foreach(Touch touch in Input.touches)
         {
+
+            if (touch.position.x < Screen.width/2)
+            {
+                gameObject.transform.eulerAngles.Set(0,0,Mathf.Atan((touch.position.y-Screen.height/2)/(touch.position.x - Screen.width / 2)));           }
+            else
+            {
+
+            }
             //left
             /*if (touch.position.x < (Screen.width / 2)){
                 gameObject.transform.Rotate(0, 0, -2);
@@ -55,7 +63,7 @@ public class NewBehaviourScript : MonoBehaviour {
                 //gameObject.transform.Translate(0, (float).063, 0);
             }*/
             //bottom
-            if (touch.position.y < (Screen.height / 2))
+            /*if (touch.position.y < (Screen.height / 2))
             {
                 //gameObject.transform.Rotate(0, 0, -1);
                 gameObject.transform.Translate(0, (float)-.1, 0);
@@ -88,7 +96,7 @@ public class NewBehaviourScript : MonoBehaviour {
                     gameObject.transform.Rotate(0, 0, -2);
                     //gameObject.transform.Translate(0, (float).063, 0);
                 }
-            }
+            }*/
         }
 
         //gameObject.transform.Translate(Touch.rawPosition.x);

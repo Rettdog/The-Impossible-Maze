@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/The Impossible Maze.unity
+    guid: 0b02e24ab6adaab4da4c6d22650230d7
+  m_configObjects: {}
